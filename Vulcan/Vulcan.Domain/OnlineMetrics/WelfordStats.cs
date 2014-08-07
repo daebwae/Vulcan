@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 
 namespace Vulcan.Domain.OnlineMetrics
 {
-    class WelfordStats: IBasicStats
+    public class WelfordStats
     {
         public double Max { get; private set; }
         public double Variance { get; private set; }
@@ -21,14 +22,17 @@ namespace Vulcan.Domain.OnlineMetrics
             ReceivedNewDataPoint += UpdateMeanAndVariance; 
 
         }
+
+
         public void AddDataPoint(double newNumber)
         {
             CurrentNumberOfDataPoints++;
-            ReceivedNewDataPoint(newNumber); 
+            ReceivedNewDataPoint(newNumber);
         }
 
         private void UpdateMin(double newNumber)
         {
+            
             Min = Math.Min(Min, newNumber); 
         }
 
@@ -53,5 +57,6 @@ namespace Vulcan.Domain.OnlineMetrics
             Mean = previousMean + (newNumber - previousMean) / CurrentNumberOfDataPoints ;
             Variance = (previousVariance + (newNumber - previousMean) * (newNumber - Mean)) / previousNumberOfDataPoints;
         }
+
     }
 }

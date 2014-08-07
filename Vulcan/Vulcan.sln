@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcan.Command", "Vulcan.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcan.Domain", "Vulcan.Domain\Vulcan.Domain.csproj", "{E16AC0C2-2C1E-4471-A4E3-4B090ED656BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcan.Domain.Tests", "Vulcan.Domain.Tests\Vulcan.Domain.Tests.csproj", "{3F5310B2-1A38-4077-BF5B-8DA97611EC02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcan.Bayes", "Vulcan.Bayes\Vulcan.Bayes.csproj", "{CB80B8D6-AE8E-47CA-A6B2-744B477B161E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FCBBD3F9-970F-463D-900C-29BA5EA9BE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.RedditBayes", "Reddit.Bayes\Samples.RedditBayes.csproj", "{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.RedditLCARS", "Reddit.LCARS\Samples.RedditLCARS.csproj", "{1A72AF27-FEF9-4381-AA3C-B49583935EDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +31,28 @@ Global
 		{E16AC0C2-2C1E-4471-A4E3-4B090ED656BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E16AC0C2-2C1E-4471-A4E3-4B090ED656BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E16AC0C2-2C1E-4471-A4E3-4B090ED656BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5310B2-1A38-4077-BF5B-8DA97611EC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5310B2-1A38-4077-BF5B-8DA97611EC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5310B2-1A38-4077-BF5B-8DA97611EC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5310B2-1A38-4077-BF5B-8DA97611EC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB80B8D6-AE8E-47CA-A6B2-744B477B161E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB80B8D6-AE8E-47CA-A6B2-744B477B161E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB80B8D6-AE8E-47CA-A6B2-744B477B161E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB80B8D6-AE8E-47CA-A6B2-744B477B161E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD} = {FCBBD3F9-970F-463D-900C-29BA5EA9BE28}
+		{1A72AF27-FEF9-4381-AA3C-B49583935EDC} = {FCBBD3F9-970F-463D-900C-29BA5EA9BE28}
 	EndGlobalSection
 EndGlobal
