@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Samples.RedditBayes;
-using Vulcan.Domain.OnlineMetrics;
+using Vulcan.DocumentDistance;
 
 namespace Vulcan.Command
 {
@@ -13,12 +8,14 @@ namespace Vulcan.Command
     {
         static void Main(string[] args)
         {
-            //var stats = new WelfordStats();
-            //stats.AddDataPoint(-2.0);
 
-            var answer = new Reddit("programming", 100).GetPosts();
+            string docA = Console.ReadLine();
+            string docB = Console.ReadLine(); 
+            var generator = new NGramGenerator(new WordSplitter(), 1);
 
-            Console.WriteLine(answer);
+            var index = new JaccardIndex(generator);
+
+            Console.WriteLine(index.Calculate(docA, docB));
             Console.ReadKey(true);
         }
     }

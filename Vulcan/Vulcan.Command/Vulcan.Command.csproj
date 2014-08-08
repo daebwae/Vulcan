@@ -90,6 +90,10 @@
       <Project>{6723BAEE-C8C4-437D-91C5-A9BCA4EF6AFD}</Project>
       <Name>Samples.RedditBayes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Vulcan.DocumentDistance\Vulcan.DocumentDistance.csproj">
+      <Project>{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}</Project>
+      <Name>Vulcan.DocumentDistance</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Vulcan.Domain\Vulcan.Domain.csproj">
       <Project>{e16ac0c2-2c1e-4471-a4e3-4b090ed656be}</Project>
       <Name>Vulcan.Domain</Name>

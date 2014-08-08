@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.RedditBayes", "Redd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.RedditLCARS", "Reddit.LCARS\Samples.RedditLCARS.csproj", "{1A72AF27-FEF9-4381-AA3C-B49583935EDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vulcan.DocumentDistance", "Vulcan.DocumentDistance\Vulcan.DocumentDistance.csproj", "{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A72AF27-FEF9-4381-AA3C-B49583935EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AF6743-2D2F-4FC2-8FB8-6E90318BEC45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
